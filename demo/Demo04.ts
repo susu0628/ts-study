@@ -5,14 +5,14 @@ let personarr2: (string | number)[] = ['jiang', 18, 'programmer']
 let personarr3: [string, string, number] = ['jiang', 'programmer', 18]
 
 // 定义了一个接口，简化代码
-interface Person {
+interface Person1 {
   name: string,
   grade: number[],
   age?: number // age是可选的值  key?: type
   [propname: string]: any,
   say: () => void
 }
-function test ({name, grade, age, sex, say}: Person) {
+function test ({name, grade, age, sex, say}: Person1) {
   let isPass = true
   grade.map((item) => {
     if (item < 60) {
@@ -26,13 +26,13 @@ function test ({name, grade, age, sex, say}: Person) {
   }
   say && say()
 }
-function getGrade ({name, grade}: Person) {
+function getGrade ({name, grade}: Person1) {
   let sum = grade.reduce((sum, item) => {
     return sum + item
   }, 0)
   console.log(`所有科目加起来的分数为: ${sum}`)
 }
-const person1= {
+const person11= {
   name: 'jiang',
   grade: [81, 96],
   age: 18,
@@ -42,8 +42,8 @@ const person1= {
     // return 'wo shi yi ge xiao ke ai'
   }
 }
-test(person1)
-getGrade(person1)
+// test(person11)
+// getGrade(person11)
 
 
 

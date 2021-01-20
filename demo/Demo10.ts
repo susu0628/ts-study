@@ -12,12 +12,12 @@ function sum<arrayType> (params: arrayType[]) {
   //   let total = params[0] + params[1]
   //   console.log(total)
   // }
-  let sum = params.reduce((total, value: arrayType) => {
-    if (typeof value === 'number') {
-      return total + value
-    }
-  }, 0)
-  console.log(sum)
+  // let sum = params.reduce((total, value: arrayType) => {
+  //   if (typeof value === 'number') {
+  //     return total + value
+  //   }
+  // }, 0)
+  // console.log(sum)
 }
 sum<number>([1, 2])
 

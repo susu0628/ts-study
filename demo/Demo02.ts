@@ -46,11 +46,11 @@ const obj1: person[] = [{
 
 
 // 除了类型别名可以 class也可以
-class person1 {
-  name: string
-  age: 18
+class person2 {
+  name?: string
+  age?: number
 }
-const obj2: person1[] = [{
+const obj2: person2[] = [{
   name: 'jiang',
   age: 18
 }]

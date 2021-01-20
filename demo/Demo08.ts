@@ -36,13 +36,13 @@ function judgeWho (people: Teacher | Doctor) {
     people.cure()
   }
 }
-const T1: Teacher = {
-  Isteaching: true,
-  say: () => {
-    console.log('wo shi teacher')
-  }
-}
-judgeWho(T1)
+// const T1: Teacher = {
+//   Isteaching: true,
+//   say: () => {
+//     console.log('wo shi teacher')
+//   }
+// }
+// judgeWho(T1)
 
 const D1: Doctor = {
   Isteaching: false,
