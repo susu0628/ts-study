@@ -1,3 +1,4 @@
+"use strict";
 // test
 var person = 'jiang';
 var say = function () {
@@ -22,13 +23,13 @@ function judgeWho(people) {
         people.cure();
     }
 }
-var T1 = {
-    Isteaching: true,
-    say: function () {
-        console.log('wo shi teacher');
-    }
-};
-judgeWho(T1);
+// const T1: Teacher = {
+//   Isteaching: true,
+//   say: () => {
+//     console.log('wo shi teacher')
+//   }
+// }
+// judgeWho(T1)
 var D1 = {
     Isteaching: false,
     cure: function () {

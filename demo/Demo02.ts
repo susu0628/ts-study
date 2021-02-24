@@ -47,14 +47,14 @@ const obj1: person[] = [{
 }]
 
 // 6. 除了类型别名可以 class也可以
-class person1 {
-  name: string
-  age: 18
-}
-const obj2: person1[] = [{
-  name: 'jiang',
-  age: 18
-}]
+// class person1 {
+//   name: string
+//   age: 18
+// }
+// const obj2: person2[] = [{
+//   name: 'jiang',
+//   age: 18
+// }]
 
 // 枚举类型 只有确定的值
 enum Gender {

@@ -1,11 +1,11 @@
-class Person {
+class Personclass {
   public name: string
   // ts中类的构造函数
   constructor(name: string) {
     this.name = name
   }
 }
-const np1 = new Person('jiang')
+const np1 = new Personclass('jiang')
 console.log(np1.name)
 
 // 也可简化
