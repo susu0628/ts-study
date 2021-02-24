@@ -11,7 +11,7 @@ let e = c + d
 function getTotal (a: number, b: number):number { 
   return a + b
 }
-let total = getTotal(3, 4)
+// let total = getTotal(3, 4)
 
 // void 代表该函数无返回值
 function test3 (): void {

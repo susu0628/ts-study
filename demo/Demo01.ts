@@ -1,14 +1,21 @@
 function helloWorld () {
-  let web: string = "hello world";
-  console.log(web)
+  let isShow: boolean = true         // Boolean类型
+  let num: number = 2               // Number类型
+  let web: string = "hello world"; // String类型
+  let u: undefined = undefined    // Undefined类型
+  let n: null = null             // Null类型
+  console.log(isShow, num, web, u, n)
 }
-helloWorld()
+helloWorld() // true  2  "hello world" undefined null
+
 /**
  * Tips:
  * 什么是ts？
- *   TS和JS之间的关系其实就是Less/Sass和CSS之间的关系
+ *   是javascript的超集（增强版）
+ *   TS和JS之间的关系其实就是Less/Sass和CSS之间的关系，ts最终是会变成js
  *   就像Less/Sass是对CSS进行扩展一样, TS也是对JS进行扩展
  *   就像Less/Sass最终会转换成CSS一样, 我们编写好的TS代码最终也会换成JS
+ *   适用于大型应用或多人协作
 
  * 为什么需要ts？
  *   因为JavaScript是弱类型, 很多错误只有在运行时才会被发现

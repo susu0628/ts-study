@@ -18,14 +18,16 @@ const xiaotan: {
 const func1: () => string = () => {
   return 'jiang'
 }
-// string 数组中只能存储字符串类型的值
-const arr: string[] = ['1', '2', '3'] 
-// (string | number) 数组中只能存储字符串类型和数字类型的值
+// 1. string 数组中只能存储字符串类型的值
+const arr: string[] = ['1', '2', '3']
+
+// 2. (string | number) 数组中只能存储字符串类型和数字类型的值
 const arr1: (string | number)[] = ['1', '2', 3]
-// any 数组可以中可以存储任意类型的值
+
+// 3. any 数组可以中可以存储任意类型的值
 const arr2: any[] = [1, 2, '3', '4', true, () => {}]
 
-// 数组中对象
+// 4. 数组中对象
 const obj: {name: string, age: number}[] = [{
   name: 'jiang',
   age: 18
@@ -34,7 +36,7 @@ const obj: {name: string, age: number}[] = [{
   age: 19
 }]
 
-// 当数组中每个对象属性过多时，我们可以使用类型别名来让代码的语义性更好
+// 5. 当数组中每个对象属性过多时，我们可以使用类型别名来让代码的语义性更好
 type person =  {
   name: string,
   age: number
@@ -44,8 +46,7 @@ const obj1: person[] = [{
   age: 18
 }]
 
-
-// 除了类型别名可以 class也可以
+// 6. 除了类型别名可以 class也可以
 class person1 {
   name: string
   age: 18
@@ -54,7 +55,6 @@ const obj2: person1[] = [{
   name: 'jiang',
   age: 18
 }]
-console.log(obj2)
 
 // 枚举类型 只有确定的值
 enum Gender {
