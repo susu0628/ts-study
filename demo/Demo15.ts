@@ -13,6 +13,7 @@ interface Fish {
   swim(): void
 }
 function isFinish (foo: (Cat | Fish)) {
+  console.log(foo.name) // xiaoyu
   if (typeof (foo as Fish).swim === 'function') {
     return true
   } else {
