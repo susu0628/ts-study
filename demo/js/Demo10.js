@@ -1,7 +1,7 @@
 "use strict";
 // 泛型：泛指的类型
 function join(first, second) {
-    console.log("" + first + second);
+    console.log(`${first}${second}`);
 }
 join('1', '2');
 // 泛型中数组的使用
@@ -21,7 +21,7 @@ function sum(params) {
 }
 sum([1, 2]);
 function total(arr) {
-    console.log("" + (arr[0] + arr[1]));
+    console.log(`${arr[0] + arr[1]}`);
 }
 total([1, 2]);
 // 多个泛型的使用<jointype1, jointype2>

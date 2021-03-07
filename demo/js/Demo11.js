@@ -1,12 +1,11 @@
 "use strict";
-var Person = /** @class */ (function () {
-    function Person(grade) {
+class Person {
+    constructor(grade) {
         this.grade = grade;
     }
-    Person.prototype.getGrade = function (index) {
+    getGrade(index) {
         console.log(this.grade[index]);
-    };
-    return Person;
-}());
-var P1 = new Person([99, 98, 67, 88]);
+    }
+}
+const P1 = new Person([99, 98, 67, 88]);
 P1.getGrade(1);

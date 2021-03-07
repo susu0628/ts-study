@@ -1,7 +1,7 @@
 "use strict";
 // test
-var person = 'jiang';
-var say = function () {
+const person = 'jiang';
+const say = () => {
     console.log('wo shi jiangsusu');
 };
 say();
@@ -30,9 +30,9 @@ function judgeWho(people) {
 //   }
 // }
 // judgeWho(T1)
-var D1 = {
+const D1 = {
     Isteaching: false,
-    cure: function () {
+    cure: () => {
         console.log('wo shi doctor');
     }
 };
@@ -40,7 +40,7 @@ judgeWho(D1);
 function Add(first, second) {
     // 类型保护 typeof语法
     if (typeof first === 'string' || typeof second === 'string') {
-        console.log("" + first + second);
+        console.log(`${first}${second}`);
     }
     else {
         console.log(first + second);
